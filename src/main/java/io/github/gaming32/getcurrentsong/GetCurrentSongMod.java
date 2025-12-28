@@ -16,7 +16,6 @@ import org.slf4j.LoggerFactory;
 
 import io.github.gaming32.getcurrentsong.SongNameDatabase.SongInfo;
 import io.github.gaming32.getcurrentsong.mixin.MusicTrackerAccessor;
-import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
@@ -32,12 +31,13 @@ import net.minecraft.sound.MusicSound;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
+import net.fabricmc.api.ClientModInitializer;
 
-public class GetCurrentSongMod implements ModInitializer {
+public class GetCurrentSongMod implements ClientModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("getcurrentsong");
 
     @Override
-    public void onInitialize() {
+    public void onInitializeClient() {
         ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
             private static final Identifier FABRIC_ID = new Identifier("getcurrentsong", "song_names");
             private static final Identifier SONG_NAMES_JSON = new Identifier("getcurrentsong", "song_names.json");

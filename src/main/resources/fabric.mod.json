@@ -16,10 +16,9 @@
   "icon": "assets/getcurrentsong/icon.png",
   "environment": "client",
   "entrypoints": {
-    "main": [
+    "client": [
       "io.github.gaming32.getcurrentsong.GetCurrentSongMod"
     ],
-    "client": [],
     "server": []
   },
   "mixins": [
