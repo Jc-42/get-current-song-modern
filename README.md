@@ -26,8 +26,6 @@ You can configure:
 - Whether the song info is shown in the pause menu and/or options menu
 - The color and position offset of the text in each menu
 
-If [Mod Menu](https://modrinth.com/mod/modmenu) is installed, these options are editable in-game.
-
 ## API
 
 This mod provides a resource-based method of getting information about the songs in Minecraft, such as name, composer, album, and track number.
