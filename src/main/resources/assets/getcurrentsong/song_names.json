@@ -278,5 +278,48 @@
         "composer": "Lena Raine",
         "soundtrack": "Minecraft: The Wild Update (Original Game Soundtrack)",
         "trackNumber": 3
+    },
+    "minecraft:music/game/bromeliad": {
+        "name": "Bromeliad",
+        "composer": "Aaron Cherof",
+        "soundtrack": "Minecraft: Trails & Tales (Original Game Soundtrack)",
+        "trackNumber": 1
+    },
+    "minecraft:music/game/crescent_dunes": {
+        "name": "Crescent Dunes",
+        "composer": "Aaron Cherof",
+        "soundtrack": "Minecraft: Trails & Tales (Original Game Soundtrack)",
+        "trackNumber": 2
+    },
+    "minecraft:music/game/echo_in_the_wind": {
+        "name": "Echo in the Wind",
+        "composer": "Aaron Cherof",
+        "soundtrack": "Minecraft: Trails & Tales (Original Game Soundtrack)",
+        "trackNumber": 3
+    },
+    "minecraft:music/game/precipice": {
+        "name": "Precipice",
+        "composer": "Aaron Cherof & Kumi Tanioka",
+        "soundtrack": "Minecraft: Tricky Trials (Original Game Soundtrack)",
+        "trackNumber": 1
+    },
+    "minecraft:music/game/creator": {
+        "name": "Creator",
+        "composer": "Lena Raine",
+        "soundtrack": "Minecraft: Tricky Trials (Original Game Soundtrack)",
+        "trackNumber": 2
+    },
+    "minecraft:music/game/creator_music_box": {
+        "name": "Creator (Music Box)",
+        "composer": "Lena Raine",
+        "soundtrack": "Minecraft: Tricky Trials (Original Game Soundtrack)",
+        "trackNumber": 3
+    },
+    "minecraft:music/game/a_familiar_room": {
+        "name": "A Familiar Room",
+        "composer": "Aaron Cherof",
+        "soundtrack": "Minecraft: Trails & Tales (Original Game Soundtrack)",
+        "trackNumber": 2
     }
 }
+

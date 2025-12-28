@@ -5,6 +5,7 @@ import io.github.jc42.getcurrentsong.SongNameDatabase;
 import io.github.jc42.getcurrentsong.SongNameDatabase.SongInfo;
 import io.github.jc42.getcurrentsong.mixin.MusicTrackerAccessor;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.OptionsScreen;
 import net.minecraft.client.sound.MusicTracker;
 import net.minecraft.client.sound.Sound;
@@ -15,52 +16,42 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(OptionsScreen.class)
+@Mixin(Screen.class)
 public class MixinOptionsScreen {
     @Inject(method = "render", at = @At("TAIL"))
     private void renderSongInfo(
-            net.minecraft.client.util.math.MatrixStack matrices,
+            net.minecraft.client.gui.DrawContext context,
             int mouseX, int mouseY, float delta, CallbackInfo ci) {
+        // Only run for OptionsScreen
+        if (!((Object)this instanceof OptionsScreen)) return;
         if (!GetCurrentSongConfig.showSongInOptionsMenu) return;
         MinecraftClient client = MinecraftClient.getInstance();
         MusicTracker musicTracker = client.getMusicTracker();
         SoundInstance currentSoundInstance = ((MusicTrackerAccessor)musicTracker).getCurrent();
-        String text;
+        String resultString;
         if (currentSoundInstance == null) {
-            text = "Song: No song";
+            resultString = "No song currently playing!";
         } else {
             Sound currentSound = currentSoundInstance.getSound();
             Identifier songId = currentSound.getIdentifier();
-            if (SongNameDatabase.isInitialized()) {
-                SongInfo songInfo = SongNameDatabase.getSong(songId);
-                if (songInfo != null) {
-                    text = "Song: " + songInfo;
-                } else {
-                    text = "Song: " + songId;
-                }
+            if (!SongNameDatabase.isInitialized()) {
+                resultString = songId.toString();
             } else {
-                text = "Song: " + songId;
+                SongInfo songInfo = SongNameDatabase.getSong(songId);
+                if (songInfo == null) {
+                    resultString = songId.toString();
+                } else {
+                    resultString = songInfo.getName() + " by " + songInfo.getComposer();
+                }
             }
         }
         int width = client.getWindow().getScaledWidth();
         int height = client.getWindow().getScaledHeight();
         int x = GetCurrentSongConfig.optionsMenuTextX;
-        int y;
-        // Try to place below the last button to avoid overlap
-        net.minecraft.client.gui.screen.Screen screen = MinecraftClient.getInstance().currentScreen;
-        if (screen != null && !screen.children().isEmpty()) {
-            int maxY = 0;
-            for (var child : screen.children()) {
-                if (child instanceof net.minecraft.client.gui.widget.ClickableWidget widget) {
-                    int bottom = widget.y + widget.getHeight();
-                    if (bottom > maxY) maxY = bottom;
-                }
-            }
-            y = maxY + 4; // 4px margin
-        } else {
-            y = GetCurrentSongConfig.optionsMenuTextY;
-            if (y < 0) y = height + y;
+        int y = GetCurrentSongConfig.optionsMenuTextY;
+        if (y < 0) {
+            y = height + y;
         }
-        client.textRenderer.drawWithShadow(matrices, text, x, y, GetCurrentSongConfig.optionsMenuTextColor);
+        context.drawTextWithShadow(client.textRenderer, resultString, x, y, GetCurrentSongConfig.optionsMenuTextColor);
     }
 }
