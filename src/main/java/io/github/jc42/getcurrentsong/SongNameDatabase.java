@@ -1,4 +1,4 @@
-package io.github.gaming32.getcurrentsong;
+package io.github.jc42.getcurrentsong;
 
 import java.util.HashMap;
 import java.util.Map;

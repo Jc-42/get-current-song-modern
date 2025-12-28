@@ -1,4 +1,4 @@
-package io.github.gaming32.getcurrentsong;
+package io.github.jc42.getcurrentsong;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,8 +14,8 @@ import com.mojang.brigadier.context.CommandContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.gaming32.getcurrentsong.SongNameDatabase.SongInfo;
-import io.github.gaming32.getcurrentsong.mixin.MusicTrackerAccessor;
+import io.github.jc42.getcurrentsong.SongNameDatabase.SongInfo;
+import io.github.jc42.getcurrentsong.mixin.MusicTrackerAccessor;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;

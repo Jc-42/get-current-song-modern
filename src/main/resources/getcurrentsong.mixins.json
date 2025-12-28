@@ -1,11 +1,13 @@
 {
   "required": true,
-  "package": "io.github.gaming32.getcurrentsong.mixin",
+  "package": "io.github.jc42.getcurrentsong.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [],
   "client": [
     "MixinDebugHud",
-    "MusicTrackerAccessor"
+    "MusicTrackerAccessor",
+    "MixinGameMenuScreen",
+    "MixinOptionsScreen"
   ],
   "server": [],
   "injectors": {

@@ -9,7 +9,24 @@ This mod adds two commands to the game:
 + `/getsong` &mdash; Gets information about the currently playing song, such as the name and composer.
 + `/getsongid` &mdash; Gets the [namespaced ID](https://minecraft.fandom.com/wiki/Namespaced_ID) of the currently playing song.
 
-However, instead of using these commands, you can see the same information on the [F3 screen](https://minecraft.fandom.com/wiki/Debug_screen).
+
+## In-Game Display
+
+You can also see the current song info in:
+
+- The [F3 screen](https://minecraft.fandom.com/wiki/Debug_screen)
+- The pause menu (ESC menu)
+- The options menu (including from the main menu)
+
+The song info text is automatically positioned below the last button in these menus, so it won't overlap with UI elements even at high GUI scales.
+
+### Configuration
+
+You can configure:
+- Whether the song info is shown in the pause menu and/or options menu
+- The color and position offset of the text in each menu
+
+If [Mod Menu](https://modrinth.com/mod/modmenu) is installed, these options are editable in-game.
 
 ## API
 
@@ -52,7 +69,7 @@ dependencies {
 }
 ```
 
-Once you have added the API to your `build.gradle`, you can load song information from resource packs using the following API (the `SongNameDatabase` class is in the `io.github.gaming32.getcurrentsong` package):
+Once you have added the API to your `build.gradle`, you can load song information from resource packs using the following API (the `SongNameDatabase` class is in the `io.github.jc42.getcurrentsong` package):
 
 + `SongNameDatabase#isInitialized` &mdash; Return `true` if the song info is currently in a loaded state. Attempting to read from the database when this returns `false` may not return correct data. You have been warned!
 + `SongNameDatabase#getSong` &mdash; Gets the current song by name or `net.minecraft.util.Identifier` and returns a `SongNameDatabase.SongInfo` object or `null` if the song wasn't found in the database.

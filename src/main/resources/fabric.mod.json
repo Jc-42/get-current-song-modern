@@ -5,19 +5,19 @@
   "name": "Get Current Song",
   "description": "Adds a client-side command to get the currently playing background music",
   "authors": [
-    "Gaming32"
+    "jc42"
   ],
   "contributors": [],
   "contact": {
-    "homepage": "https://github.com/Gaming32/fabric-get-current-song",
-    "sources": "https://github.com/Gaming32/fabric-get-current-song"
+    "homepage": "https://github.com/jc42/fabric-get-current-song",
+    "sources": "https://github.com/jc42/fabric-get-current-song"
   },
   "license": "MIT",
   "icon": "assets/getcurrentsong/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "io.github.gaming32.getcurrentsong.GetCurrentSongMod"
+      "io.github.jc42.getcurrentsong.GetCurrentSongMod"
     ],
     "server": []
   },
@@ -27,5 +27,8 @@
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": ">=0.55.1"
+  },
+  "recommends": {
+    "modmenu": ">=4.0.0"
   }
 }

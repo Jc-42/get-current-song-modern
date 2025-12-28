@@ -1,4 +1,4 @@
-package io.github.gaming32.getcurrentsong.mixin;
+package io.github.jc42.getcurrentsong.mixin;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import io.github.gaming32.getcurrentsong.SongNameDatabase;
-import io.github.gaming32.getcurrentsong.SongNameDatabase.SongInfo;
+import io.github.jc42.getcurrentsong.SongNameDatabase;
+import io.github.jc42.getcurrentsong.SongNameDatabase.SongInfo;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.hud.DebugHud;
 import net.minecraft.client.sound.MusicTracker;
