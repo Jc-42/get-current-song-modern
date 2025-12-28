@@ -1,6 +1,6 @@
 # Get Current Song
 
-This is a simple FabricMC mod that allows you to get the current playing song in Minecraft via a command.
+This is a simple FabricMC mod that allows you to get the current playing song in Minecraft via a command. Updated for 1.19+ [Original Version](https://modrinth.com/mod/getcurrentsong)
 
 ## Commands
 
