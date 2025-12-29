@@ -85,6 +85,30 @@ public final class SongNameDatabase {
             }
             return result.toString();
         }
+
+        public static SongInfo fromIdentifier(Identifier id) {
+            // Extract filename from identifier path (e.g., "minecraft:music/game/mice_on_venus" -> "mice_on_venus")
+            String path = id.getPath();
+            String filename = path.substring(path.lastIndexOf('/') + 1);
+            
+            // Convert underscores to spaces and capitalize each word
+            String[] words = filename.split("_");
+            StringBuilder nameBuilder = new StringBuilder();
+            for (int i = 0; i < words.length; i++) {
+                if (i > 0) {
+                    nameBuilder.append(" ");
+                }
+                String word = words[i];
+                if (word.length() > 0) {
+                    nameBuilder.append(Character.toUpperCase(word.charAt(0)));
+                    if (word.length() > 1) {
+                        nameBuilder.append(word.substring(1));
+                    }
+                }
+            }
+            
+            return new SongInfo(nameBuilder.toString(), "Unknown");
+        }
     }
 
     private static final Map<Identifier, SongInfo> SONGS = new HashMap<>();

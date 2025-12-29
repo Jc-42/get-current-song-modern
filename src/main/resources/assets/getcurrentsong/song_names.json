@@ -1,172 +1,172 @@
 {
-    "minecraft:music/game/nuance1": {
+    "minecraft:music/game/key": {
         "name": "Key",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 1
     },
-    "minecraft:music/game/hal1": {
+    "minecraft:music/game/subwoofer_lullaby": {
         "name": "Subwoofer Lullaby",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 3
     },
-    "minecraft:music/game/hal2": {
+    "minecraft:music/game/living_mice": {
         "name": "Living Mice",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 5
     },
-    "minecraft:music/game/hal3": {
+    "minecraft:music/game/haggstrom": {
         "name": "Haggstrom",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 7
     },
-    "minecraft:music/game/calm1": {
+    "minecraft:music/game/minecraft": {
         "name": "Minecraft",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 8
     },
-    "minecraft:music/game/nuance2": {
+    "minecraft:music/game/oxygene": {
         "name": "Oxygéne",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 9
     },
-    "minecraft:music/game/piano3": {
+    "minecraft:music/game/mice_on_venus": {
         "name": "Mice on Venus",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 11
     },
-    "minecraft:music/game/piano1": {
+    "minecraft:music/game/dry_hands": {
         "name": "Dry Hands",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 12
     },
-    "minecraft:music/game/piano2": {
+    "minecraft:music/game/wet_hands": {
         "name": "Wet Hands",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 13
     },
-    "minecraft:music/game/calm2": {
+    "minecraft:music/game/clark": {
         "name": "Clark",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 14
     },
-    "minecraft:music/game/calm3": {
+    "minecraft:music/game/sweden": {
         "name": "Sweden",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 18
     },
-    "minecraft:music/game/hal4": {
+    "minecraft:music/game/danny": {
         "name": "Danny",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Alpha",
         "trackNumber": 21
     },
 
-    "minecraft:music/game/end/credits": {
+    "minecraft:music/game/end/alpha": {
         "name": "Alpha",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 2
     },
-    "minecraft:music/game/nether/nether2": {
+    "minecraft:music/game/nether/dead_voxel": {
         "name": "Dead Voxel",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 3
     },
-    "minecraft:music/game/creative/creative2": {
+    "minecraft:music/game/creative/blind_spots": {
         "name": "Blind Spots",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 4
     },
-    "minecraft:music/menu/menu2": {
+    "minecraft:music/menu/moog_city_2": {
         "name": "Moog City 2",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 6
     },
-    "minecraft:music/game/nether/nether1": {
+    "minecraft:music/game/nether/concrete_halls": {
         "name": "Concrete Halls",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 7
     },
-    "minecraft:music/game/creative/creative1": {
+    "minecraft:music/game/creative/biome_fest": {
         "name": "Biome Fest",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 8
     },
-    "minecraft:music/menu/menu1": {
+    "minecraft:music/menu/mutation": {
         "name": "Mutation",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 9
     },
-    "minecraft:music/game/creative/creative3": {
+    "minecraft:music/game/creative/haunt_muskie": {
         "name": "Haunt Muskie",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 10
     },
-    "minecraft:music/game/nether/nether3": {
+    "minecraft:music/game/nether/warmth": {
         "name": "Warmth",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 11
     },
-    "minecraft:music/menu/menu4": {
+    "minecraft:music/menu/floating_trees": {
         "name": "Floating Trees",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 12
     },
-    "minecraft:music/game/creative/creative4": {
+    "minecraft:music/game/creative/aria_math": {
         "name": "Aria Math",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 13
     },
-    "minecraft:music/game/nether/nether4": {
+    "minecraft:music/game/nether/ballad_of_the_cats": {
         "name": "Ballad of the Cats",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 15
     },
-    "minecraft:music/game/creative/creative6": {
+    "minecraft:music/game/creative/dreiton": {
         "name": "Dreiton",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 16
     },
-    "minecraft:music/menu/menu3": {
+    "minecraft:music/menu/beginning_2": {
         "name": "Beginning 2",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 17
-    },
-    "minecraft:music/game/creative/creative5": {
-        "name": "Dreiton",
-        "composer": "C418",
-        "soundtrack": "Minecraft - Volume Beta",
-        "trackNumber": 18
     },
     "minecraft:music/game/end/end": {
         "name": "The End",
         "composer": "C418",
         "soundtrack": "Minecraft - Volume Beta",
         "trackNumber": 19
+    },
+    "minecraft:music/game/creative/taswell": {
+        "name": "Taswell",
+        "composer": "C418",
+        "soundtrack": "Minecraft - Volume Beta",
+        "trackNumber": 20
     },
 
     "minecraft:music/game/end/boss": {
@@ -297,29 +297,11 @@
         "soundtrack": "Minecraft: Trails & Tales (Original Game Soundtrack)",
         "trackNumber": 3
     },
-    "minecraft:music/game/precipice": {
-        "name": "Precipice",
-        "composer": "Aaron Cherof & Kumi Tanioka",
-        "soundtrack": "Minecraft: Tricky Trials (Original Game Soundtrack)",
-        "trackNumber": 1
-    },
-    "minecraft:music/game/creator": {
-        "name": "Creator",
-        "composer": "Lena Raine",
-        "soundtrack": "Minecraft: Tricky Trials (Original Game Soundtrack)",
-        "trackNumber": 2
-    },
-    "minecraft:music/game/creator_music_box": {
-        "name": "Creator (Music Box)",
-        "composer": "Lena Raine",
-        "soundtrack": "Minecraft: Tricky Trials (Original Game Soundtrack)",
-        "trackNumber": 3
-    },
     "minecraft:music/game/a_familiar_room": {
         "name": "A Familiar Room",
         "composer": "Aaron Cherof",
         "soundtrack": "Minecraft: Trails & Tales (Original Game Soundtrack)",
-        "trackNumber": 2
+        "trackNumber": 4
     }
 }
 

@@ -39,10 +39,9 @@ public class MixinOptionsScreen {
             } else {
                 SongInfo songInfo = SongNameDatabase.getSong(songId);
                 if (songInfo == null) {
-                    resultString = songId.toString();
-                } else {
-                    resultString = songInfo.getName() + " by " + songInfo.getComposer();
+                    songInfo = SongInfo.fromIdentifier(songId);
                 }
+                resultString = songInfo.getName() + " by " + songInfo.getComposer();
             }
         }
         int width = client.getWindow().getScaledWidth();
